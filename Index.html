@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>World of Whales: Home</title>
+    <link rel="stylesheet" href="StyleWhale.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@200;400;700&display=swap" rel="stylesheet">
+    <link rel="icon" type="image/x-icon" href="img/favicon-whale.png">
+</head>
+
+<body>
+
+    <!--   navegation  -->
+
+    <div class="burger">
+        <div class="hamburger-lines">
+            <span class="line line1"></span>
+            <span class="line line2"></span>
+            <span class="line line3"></span>
+        </div>
+        <div class="menu-items">
+            <div class="nav-title">
+                <p>Which whale would you like to know about?</p>
+            </div>
+            <li class="ticker">
+                <a href="/AllPages/narwhal.html" class="nav-link">
+                    <div class="nav-band">Narwhal&nbsp;&nbsp</div>
+                    <div class="nav-band">Narwhal&nbsp;&nbsp</div>
+                    <div class="nav-band">Narwhal&nbsp;&nbsp</div>
+                    <div class="nav-band">Narwhal&nbsp;&nbsp</div>
+                    <div class="nav-band">Narwhal</div>
+                </a>
+            </li>
+            <li class="ticker">
+                <a href="/AllPages/beluga.html" class="nav-link">
+                    <div class="nav-band">Beluga&nbsp;&nbsp</div>
+                    <div class="nav-band">Beluga&nbsp;&nbsp</div>
+                    <div class="nav-band">Beluga&nbsp;&nbsp</div>
+                    <div class="nav-band">Beluga&nbsp;&nbsp</div>
+                    <div class="nav-band">Beluga&nbsp;&nbsp</div>
+                </a>
+            </li>
+            <li class="ticker">
+                <a href="AllPages/potwhale.html" class="nav-link">
+                    <div class="nav-band">Pot Whale&nbsp;&nbsp</div>
+                    <div class="nav-band">Pot Whale&nbsp;&nbsp</div>
+                    <div class="nav-band">Pot Whale&nbsp;&nbsp</div>
+                    <div class="nav-band">Pot Whale&nbsp;&nbsp</div>
+                    <div class="nav-band">Pot Whale&nbsp;&nbsp</div>
+                </a>
+            </li>
+            <li class="ticker">
+                <a href="AllPages/orca.html" class="nav-link">
+                    <div class="nav-band">Orca&nbsp;&nbsp</div>
+                    <div class="nav-band">Orca&nbsp;&nbsp</div>
+                    <div class="nav-band">Orca&nbsp;&nbsp</div>
+                    <div class="nav-band">Orca&nbsp;&nbsp</div>
+                    <div class="nav-band">Orca&nbsp;&nbsp</div>
+                    <div class="nav-band">Orca&nbsp;&nbsp</div>
+                    <div class="nav-band">Orca&nbsp;&nbsp</div>
+                    <div class="nav-band">Orca&nbsp;&nbsp</div>
+                </a>
+            </li>
+            <li class="ticker">
+                <a href="AllPages/bluewhale.html" class="nav-link">
+                    <div class="nav-band">Blue Whale&nbsp;&nbsp</div>
+                    <div class="nav-band">Blue Whale&nbsp;&nbsp</div>
+                    <div class="nav-band">Blue Whale&nbsp;&nbsp</div>
+                    <div class="nav-band">Blue Whale&nbsp;&nbsp</div>
+                    <div class="nav-band">Blue Whale&nbsp;&nbsp</div>
+                </a>
+            </li>
+            <div class="backhome">
+                <a href="Index.html">
+                    <p>h o m e</p>
+                </a>
+            </div>
+
+        </div>
+
+    </div>
+
+    <div class="API">
+
+        <div class="location">
+            <p class="location-timezone">Timezone</p>
+        </div>
+
+        <div class="temperature">
+            <div class="degree-section">
+                <p class="temperature-degree">34</p>
+                <span>C°</span>
+            </div>
+        </div>
+        <div class="temperature-description">It's getting hot in here</div>
+    </div>
+    <div class="about">
+        <a href="/AllPages/About.html">about</a>
+    </div>
+    <div class="randoom">W</div>
+
+    <!--   navegation  -->
+
+    <div class="seccion1" id="sec">
+        <p class="diveIn">d i v e &nbsp i n</p>
+        <img class="arrow1" src="img/icons8-pfeil.png" alt="">
+    </div>
+    <div class="seccion2" id="sec">
+        <p>Welcome</p>
+    </div>
+    <div class="seccion3" id="sec">
+        <p>to the</p>
+    </div>
+    <div class="seccion4" id="sec">
+        <p>World of</p>
+    </div>
+    <div class="seccion5" id="sec">
+        <p>whales</p>
+    </div>
+    <div class="seccion6" id="sec">
+        <p class="forFun">the chaotic and fun website dedicated to all things whales!</p>
+    </div>
+
+    <script src="/Js/home.js"></script>
+    <script>
+        const hamburger = document.querySelector(".hamburger-lines");
+        const menu = document.querySelector(".menu-items");
+
+        hamburger.addEventListener("click", () => {
+            hamburger.classList.toggle("active");
+            menu.classList.toggle("active");
+        })
+
+        document.querySelectorAll(".nav-link").forEach(n => n.addEventListener("click", () => {
+            hamburger.classList.remove("active");
+            menu.classList.remove("active");
+        }))
+
+    </script>
+
+</body>
+
+</html>

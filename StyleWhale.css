@@ -1,0 +1,1189 @@
+body {
+    width: 100vw;
+    height: 100vh;
+    overflow-x: hidden;
+    box-sizing: border-box;
+
+    -webkit-transition: all 0.5s ease;
+    -moz-transition: all 0.5s ease;
+    -o-transition: all 0.5s ease;
+    transition: all 0.5s ease;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins';
+    box-sizing: border-box;
+    list-style: none;
+    color: white;
+    text-decoration: none;
+}
+
+
+/*  ------------ NAV ----------------*/
+
+.API,
+.about,
+.burger,
+.randoom {
+    width: 10vw;
+    height: 10vh;
+    position: fixed;
+    z-index: 3;
+}
+
+.API {
+    top: 5vh;
+    left: 4vw;
+}
+
+.about {
+    bottom: 0vh;
+    left: 4vw;
+}
+
+.randoom {
+    bottom: 0vh;
+    right: -4vw;
+}
+
+.burger {
+    width: 100vw;
+    left: 95vw;
+    display: flex;
+    cursor: pointer;
+    z-index: 4;
+}
+
+.hamburger-lines {
+    display: block;
+    position: fixed;
+    right: 4vw;
+    top: 4vh;
+    justify-content: space-between;
+    align-items: center;
+    height: 10vh;
+    z-index: 5;
+    opacity: 3;
+}
+
+.line {
+    display: block;
+    width: 25px;
+    height: 3px;
+    margin: 0.5vw auto;
+    background-color: white;
+    transition: all 0.3s ease-in-out;
+}
+
+.menu-items.active {
+    overflow: hidden;
+    position: fixed;
+    right: 0vw;
+    width: 100vw;
+    height: 100vh;
+
+    background: linear-gradient(0deg, rgba(8, 11, 13, 1) 0%, rgba(30, 57, 110, 1) 61%, rgba(12, 91, 149, 1) 100%);
+
+    transition: 0.5s ease-in-out;
+
+    flex-direction: column;
+    text-align: center;
+
+}
+
+.menu-items {
+    overflow: hidden;
+    display: flex;
+    background-color: #080B0D;
+    position: fixed;
+    right: -100vw;
+    width: 100vw;
+    height: 100vh;
+    align-items: center;
+    flex-direction: column;
+    transition: 0.5s;
+
+}
+
+
+.hamburger-lines.active .line:nth-child(2) {
+    opacity: 0;
+    ;
+}
+
+.hamburger-lines.active .line:nth-child(1) {
+    transform: translateY(1.2vh) rotate(45deg);
+}
+
+.hamburger-lines.active .line:nth-child(3) {
+    transform: translateY(-1.2vh) rotate(-45deg);
+}
+
+
+.nav-title {
+    width: 100%;
+    height: 20%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+}
+
+.backhome {
+    width: 100%;
+    height: 20%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+
+    text-transform: uppercase;
+    font-weight: 600;
+    color: rgba(255, 255, 255, 0);
+    -webkit-text-stroke: 0.8px rgb(255, 255, 255);
+}
+
+.backhome:visited {
+    color: rgba(255, 255, 255, 0);
+    -webkit-text-stroke: 0.8px rgb(255, 255, 255);
+}
+
+.backhome:hover {
+    color: white;
+}
+
+.backhome:link {
+    color: rgba(255, 255, 255, 0);
+    -webkit-text-stroke: 0.8px rgb(255, 255, 255);
+}
+
+
+
+
+.nav-link {
+    transition: 0.3s ease-out;
+
+}
+
+.nav-band {
+    overflow: hidden;
+    display: inline-block;
+
+    color: rgba(255, 255, 255, 0);
+    -webkit-text-stroke: 0.8px rgb(255, 255, 255);
+
+    font-size: 5rem;
+    text-transform: uppercase;
+    font-weight: 700;
+}
+
+.ticker {
+    width: 100%;
+    height: 12.5%;
+    position: relative;
+    left: 0vw;
+    display: inline-block;
+    box-sizing: content-box;
+    white-space: nowrap;
+    animation: ticker 8s linear 0s infinite paused;
+}
+
+.ticker:hover,
+.nav-band:hover {
+    animation-play-state: running;
+    color: white;
+}
+
+
+@keyframes ticker {
+    0% {
+        transform: translate3d(0, 0, 0);
+        visibility: visible;
+    }
+
+    100% {
+        transform: translate3d(-40%, 0, 0);
+    }
+}
+
+/* .location, .temperature{
+    display: flex;
+    flex-direction: column;
+    font-size: 0.8rem;
+} */
+.degree-section {
+    display: flex;
+    flex-direction: row;
+}
+
+.temperature-degree {
+    padding-right: 0.5vw;
+}
+
+.temperature-description {
+    font-size: 0.7rem;
+}
+
+.bodyabout {
+    background-image: url(img/Hintergrundgradient-Web.svg);
+    background-size: cover;
+}
+
+.intro-about{
+    width: 100vw;
+    height: 100vh;
+}
+
+/*  ------------ NAV ----------------*/
+
+/*  ------------ HOME --------------------------------------------*/
+.seccion1,
+.seccion2,
+.seccion3,
+.seccion4,
+.seccion5,
+.seccion6 {
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+}
+
+.seccion6 {
+    align-items: flex-end;
+}
+
+.seccion1,
+.seccion2,
+.seccion3,
+.seccion4,
+.seccion5 {
+    align-items: center;
+}
+
+
+.seccion2,
+.seccion3,
+.seccion4,
+.seccion5 {
+    font-size: 10rem;
+    font-weight: bold;
+}
+
+.diveIn {
+    position: absolute;
+    bottom: 10vh;
+    animation: fadeInDown 2s ease-out infinite;
+}
+
+.forFun {
+    bottom: 10vh;
+    position: relative;
+}
+
+.arrow1 {
+    width: 2vw;
+    position: absolute;
+    bottom: 7vh;
+    animation: fadeInDown 2s ease-out infinite;
+}
+
+
+@keyframes fadeInDown {
+    0% {
+        opacity: 0;
+        transform: translateY(-20px);
+    }
+
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/*  ------------ HOME --------------------------------------------*/
+
+
+/*  ------------ Narwahl --------------------------------------------*/
+
+.body-narwahl {
+    background: url(img/Narwahl/icy_background.webp) no-repeat;
+    background-color: #000020;
+}
+
+
+.narw-grouptitle {
+    font-size: 10rem;
+    height: 180vh;
+    width: 100vw;
+
+    display: grid;
+    grid-template-columns: repeat(9, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+}
+
+.narw-title {
+    font-weight: 600;
+    grid-row: 2;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#titlenarw {
+    grid-row: 2;
+    grid-column: 2/7;
+
+    position: relative;
+    transform: translate(65vh);
+
+    z-index: 1;
+}
+
+.narw-N {
+    grid-column: 2;
+}
+
+.narw-A {
+    grid-column: 3;
+}
+
+.narw-R {
+    grid-column: 4;
+}
+
+.narw-W {
+    grid-column: 5;
+}
+
+.narw-W2 {
+    grid-column: 5;
+    color: rgba(255, 255, 255, 0);
+    -webkit-text-stroke: 2px rgb(255, 255, 255);
+    z-index: 2;
+}
+
+.narw-A2 {
+    grid-column: 6;
+}
+
+.narw-H {
+    grid-column: 7;
+}
+
+.narw-L {
+    grid-column: 8;
+}
+
+.narw-N,
+.narw-R,
+.narw-A2,
+.narw-L {
+    grid-row: 1;
+    position: relative;
+    transform: translateY(22vh);
+    z-index: 2;
+}
+
+.narw-A,
+.narw-W,
+.narw-W2,
+.narw-H {
+    grid-row: 3;
+    position: relative;
+    transform: translateY(-20vh);
+}
+
+
+.narw-A,
+.narw-W,
+.narw-H {
+    z-index: 0;
+}
+
+.narw-seccion-1,
+.narw-seccion-2,
+.narw-seccion-3 {
+    height: 90vh;
+    width: 100vw;
+    display: flex;
+    font-weight: 100;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+
+    font-weight: 100;
+    font-size: 2rem;
+    text-align: center;
+}
+
+
+h2 {
+    text-transform: uppercase;
+    text-align: center;
+    font-size: 3rem;
+    font-weight: 500;
+}
+
+
+.narwText {
+    width: 65%;
+}
+
+
+.ice {
+    height: auto;
+    position: absolute;
+}
+
+.ice1 {
+    width: 15vw;
+    right: 15vw;
+    transform: translateY(-35vh);
+    animation: down 15s linear forwards;
+}
+
+
+.ice2 {
+    width: 5vw;
+    left: 15vw;
+    transform: translateY(-35vh);
+}
+
+.ice6,
+.ice5,
+.ice26 {
+    width: 20vw;
+    left: 85vw;
+    transform: translateY(210%);
+    white-space: nowrap;
+}
+
+.ice5 {
+    transform: translateY(30%);
+}
+
+#ice7 {
+    animation: down 25s linear forwards;
+}
+
+#ice7,
+.ice17 {
+    width: 20vw;
+    right: 80vw;
+}
+
+.ice17 {
+
+    transform: translateY(600vh);
+
+}
+
+.ice4 {
+    width: 18vw;
+    right: 85vw;
+    transform: translateY(50vh);
+}
+
+.ice3 {
+    width: 20vw;
+    left: 30vw;
+    animation: slide 12s linear forwards;
+}
+
+
+.ice16 {
+    width: 20vw;
+    right: 30vw;
+    bottom: -180vh;
+    z-index: -5;
+    animation: slide 12s linear 4s forwards;
+}
+
+
+.ice11 {
+    width: 40vw;
+    top: 110vh;
+    left: 20vw;
+    z-index: -7;
+    animation: down 22s linear forwards reverse, scale 12s ease-in-out infinite;
+}
+
+
+.ice9 {
+    width: 20vw;
+    right: 10vw;
+    top: 100vh;
+    animation: scale 12s ease-in-out infinite;
+}
+
+
+.ice14 {
+    z-index: -2;
+    width: 20vw;
+    left: 40vw;
+    top: 335vh;
+}
+
+.ice15 {
+    width: 20vw;
+    right: 0vw;
+    transform: translateY(220vh);
+    animation: bel1 22s linear;
+}
+
+@keyframes scale {
+    0% {
+        transform: scale(0.3);
+    }
+
+    50% {
+        transform: scale(0.6);
+    }
+
+    100% {
+        transform: scale(0.3);
+    }
+
+}
+
+@keyframes down {
+    from {
+        top: 120vw;
+    }
+
+    to {
+        bottom: -143vw;
+    }
+}
+
+@keyframes slide {
+    0% {
+        transform: translate3d(0, 50vh, 0);
+    }
+
+    100% {
+        transform: translate3d(0, -100vh, 0);
+    }
+}
+
+.narw-seccion-3 {
+    position: relative;
+}
+
+#NarImg1 {
+    width: 27vw;
+    right: 10vw;
+    top: 10vh;
+}
+
+.narw-seccion-3>p {
+    z-index: 1;
+}
+
+#NarImg2 {
+    width: 27vw;
+    left: 8vw;
+    top: 8vh;
+}
+
+#NarImg3 {
+    width: 27vw;
+    right: 28vw;
+    bottom: 5vh;
+}
+
+/*  ------------ Narwahl --------------------------------------------*/
+
+/*  ------------ Beluga --------------------------------------------*/
+
+.bodyBeluga {
+    background-image: url(img/Beluga/IcyUnderwater-Background-Beluga.webp);
+}
+
+.HeadBel {
+    width: 100vw;
+    display: flex;
+    flex-direction: column;
+    position: fixed;
+    top: 10vh;
+}
+
+.factB {
+    display: flex;
+    font-size: 0.9rem;
+    font-weight: 100;
+    justify-content: space-evenly;
+    padding-right: 17vw;
+    padding-left: 17vw;
+}
+
+
+.belTitle {
+    height: 15vh;
+    display: flex;
+    justify-content: center;
+    font-size: 35vh;
+    font-weight: 600;
+    text-transform: uppercase;
+}
+
+.BelSec0 {
+    height: 100vh;
+}
+
+.bel1 {
+    position: relative;
+    width: 50vw;
+    animation: bel1 15s linear infinite;
+}
+
+@keyframes bel1 {
+    0% {
+        top: 5vh;
+        right: -100vw;
+    }
+
+    50% {
+        top: 50vh;
+    }
+
+    100% {
+        top: 10vw;
+        right: 50vw;
+    }
+
+}
+
+
+.BelSec1,
+.BelSec2,
+.BelSec3,
+.PotSec1 {
+    position: relative;
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.BelSec1>p,
+.BelSec2>p,
+.BelSec3>p {
+    font-weight: 100;
+    font-size: 2rem;
+    width: 65vw;
+    text-align: center;
+}
+
+.easteregg,
+.easteregg2 {
+    position: absolute;
+    width: 100vw;
+    object-fit: cover;
+
+
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    /*     grid-template-rows: repeat(3, 1fr); */
+
+}
+
+.easteregg {
+    transform: translateY(60vh);
+}
+
+text {
+    font-size: 0.7rem;
+    fill: white;
+
+}
+
+#curve {
+    fill: none;
+}
+
+svg,
+.BelBub1,
+.BelBub2,
+.BelMess2,
+.BelBub3,
+.BelMess3 {
+    width: 10vw;
+    object-fit: contain;
+    position: relative;
+    grid-row: 2;
+    grid-column: 2;
+    justify-self: center;
+}
+
+svg,
+.BelBub1 {
+    right: 30vw;
+    animation: bubrotation 30s linear infinite;
+}
+
+.BelBub1,
+.BelBub2,
+.BelBub3 {
+    z-index: 4;
+}
+
+
+.BelBub2,
+.BelMess2 {
+    top: -355vh;
+    left: 40vw;
+    animation: down2 20s linear forwards, bubrotation 30s linear infinite;
+}
+
+
+@keyframes down2 {
+    from {
+        top: 0vw;
+    }
+
+    to {
+        bottom: -163vw;
+    }
+}
+
+
+.BelBub3,
+.BelMess3 {
+    top: -40vh;
+    right: 5vw;
+    animation: bubrotation 30s linear infinite reverse;
+}
+
+@keyframes bubrotation {
+    0% {
+        transform: rotate(0deg);
+    }
+
+    100% {
+        transform: rotate(360deg);
+    }
+
+}
+
+.Belparalax {
+    position: absolute;
+    object-fit: contain;
+}
+
+
+.belIce1,
+.belIce2,
+.belIce7,
+.belIce8,
+.belIce12,
+.belIce13,
+.BelUp {
+    position: absolute;
+    width: 15vw;
+}
+
+.belIce1 {
+    left: 0vw;
+    width: 20vw;
+}
+
+.belIce2 {
+    top: 100vh;
+    left: 0vw;
+}
+
+.belIce7 {
+    top: 75vh;
+    left: 85vw;
+}
+
+.belIce8 {
+    top: -30vh;
+    left: 85vw;
+}
+
+.belIce12 {
+    top: 175vh;
+    width: 25vw;
+    left: 75vw;
+}
+
+.belIce13 {
+    top: 205vh;
+    width: 20vw;
+    left: 0vw;
+    transform: scaleX(-1);
+}
+
+
+.belIce10,
+.belIce14,
+.belIce15,
+.belIce17 {
+    position: absolute;
+    width: 15vw;
+}
+
+.belIce10 {
+    top: 75vh;
+    right: -60vw;
+}
+
+.belIce14 {
+    top: -25vh;
+    left: 65vw;
+}
+
+.belIce15 {
+    top: 185vh;
+    left: 35vw;
+}
+
+.belIce17 {
+    top: 185vh;
+    left: 35vw;
+}
+
+.bel2 {
+    position: relative;
+    right: -10vw;
+}
+
+.bel3 {
+    position: relative;
+    right: -10vw;
+}
+
+#BelImg1 {
+    width: 20vw;
+    top: 15vh;
+    left: 5vw;
+}
+
+#BelImg2 {
+    width: 33vw;
+    top: 8vh;
+    right: 33vw;
+}
+
+#BelImg3 {
+    width: 28vw;
+    bottom: 15vh;
+    left: 13vw;
+}
+
+#BelImg4 {
+    width: 13vw;
+    bottom: 70vh;
+    right: 10vw;
+}
+
+#BelImg5 {
+    width: 25vw;
+    bottom: 15vh;
+    right: 13vw;
+}
+
+
+.BelSec3>p {
+    z-index: 1;
+}
+
+/*  ------------ Beluga --------------------------------------------*/
+
+/*  ------------ Blue Whale --------------------------------------------*/
+
+.bodyBlueW {
+    background-image: url(img/BlueWhale/BlueSeaBackground.webp);
+    cursor: url('/img/BlueWhale/icons8-garnele-48.png'), auto;
+}
+
+
+.HeadBlue {
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+}
+
+
+.BlueTitle {
+    display: flex;
+    justify-content: center;
+    font-size: 35vh;
+    font-weight: 600;
+    text-transform: uppercase;
+    text-align: center;
+    line-height: 25vh;
+}
+
+
+/*  ------------ Blue Whale --------------------------------------------*/
+
+/*  ------------ Orca --------------------------------------------*/
+.bodyOrca {
+    background-image: url(img/orca/OrcaBackground.webp);
+}
+
+.KillTitle {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.KillSec1,
+.KillSec2,
+.KillSec3 {
+    position: relative;
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.KillSec1>p,
+.KillSec2>p,
+.KillSec3>p {
+    font-weight: 100;
+    font-size: 2rem;
+    width: 65vw;
+    text-align: center;
+}
+
+#background-Orac-vid {
+    object-fit: cover;
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+}
+
+.KillSec3>p,
+.KillSec1>p {
+    z-index: 3;
+}
+
+.OrcTitK:hover,
+.OrcTitW:hover {
+    font-size: 25vh;
+    color: rgba(255, 255, 255, 0);
+    -webkit-text-stroke: 2px rgb(255, 255, 255);
+}
+
+.OrcTitK,
+.OrcTitW {
+    height: fit-content;
+    align-items: center;
+    display: inline;
+    font-size: 35vh;
+    font-weight: 600;
+    text-transform: uppercase;
+    line-height: 30vh;
+    overflow: hidden;
+}
+
+.txt-type>.txt {
+    border-right: 0.3rem solid rgba(255, 255, 255);
+    animation: blinkTextCursor 150ms steps(40) infinite normal;
+}
+
+@keyframes blinkTextCursor {
+    from {
+        border-right-color: rgba(255, 255, 255);
+    }
+
+    to {
+        border-right-color: transparent;
+    }
+}
+
+/*  ------------ Orca --------------------------------------------*/
+/*  ------------ PotWhale --------------------------------------------*/
+.bodyPotW {
+    background-image: url(img/PotWhale/PotWhleBackground.webp);
+}
+
+.HeadPot {
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.PotTitle {
+    display: flex;
+    justify-content: center;
+    font-size: 15vh;
+    font-weight: 600;
+    text-transform: uppercase;
+}
+
+#show-image-button,
+#show-image-button2,
+#show-image-button3,
+#show-image-button4,
+#show-image-button5 {
+    font-weight: 700;
+    cursor: pointer;
+}
+
+#PotImg1,
+#PotImg2,
+#PotImg3,
+#PotImg4,
+#BelImg1,
+#BelImg2,
+#BelImg3,
+#BelImg4,
+#BelImg5,
+#NarImg1,
+#NarImg2,
+#NarImg3 {
+    display: none;
+    max-width: 100vh;
+    position: absolute;
+}
+
+#PotImg1 {
+    top: 10vh;
+    left: 10vw;
+    width: 30vw;
+}
+
+#PotImg2 {
+    bottom: 9vh;
+    left: 5vw;
+    width: 24vw;
+}
+
+#PotImg3 {
+    top: 5vh;
+    right: 10vw;
+    width: 25vw;
+}
+
+#PotImg4 {
+    bottom: 15vh;
+    right: 5vw;
+    width: 32vw;
+}
+
+
+img:hover {
+    z-index: 2;
+}
+
+.PotSec1>p {
+    z-index: 1;
+    font-weight: 100;
+    font-size: 2rem;
+    width: 65vw;
+    text-align: center;
+}
+
+.PotTitImg {
+    transform: scaleX(-1);
+    width: 70vw;
+    position: absolute;
+    z-index: -2;
+    animation: PotImg 5s linear forwards;
+}
+
+@keyframes PotImg {
+    from {
+
+        left: -50vw;
+    }
+
+    to {
+
+        left: -10vw
+    }
+}
+
+.PotParalax {
+    position: absolute;
+    z-index: -1;
+    width: 100vw;
+    object-fit: contain;
+}
+
+.PotParalax>img {
+    position: absolute;
+}
+
+.SleepPot1,
+.SleepPot2,
+.SleepPot3,
+.SleepPot7 {
+    width: 13vw;
+}
+
+.SleepPot1 {
+    top: -5vh;
+    right: 15vw;
+}
+
+.SleepPot2 {
+    bottom: -15vh;
+    right: -2vw;
+
+}
+
+.SleepPot3 {
+    bottom: -13vh;
+    left: 8vw;
+}
+
+.SleepPot4 {
+    width: 8vw;
+    top: -36vh;
+    left: 24vw;
+    filter: opacity(0.4);
+}
+
+.SleepPot5 {
+    z-index: -2;
+    width: 25vw;
+    top: 11vh;
+    left: 21vw;
+    filter: opacity(0.4);
+}
+
+.SleepPot6 {
+    z-index: -2;
+    filter: opacity(0.3);
+    width: 45vw;
+    top: 20vh;
+    right: 29vw;
+}
+
+.SleepPot7 {
+    z-index: -2;
+    filter: opacity(0.3);
+    left: -5vw;
+    top: 15vh;
+}
+
+.PotParalax>video {
+    position: absolute;
+    z-index: 1;
+    width: 20vw;
+    top: -50vh;
+    left: 40vw;
+}
+
+/*  ------------ PotWhale --------------------------------------------*/
