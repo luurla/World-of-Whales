@@ -27,7 +27,7 @@
       console.log(window.scrollY)
   }
   
-/* 
+
   window.addEventListener('load', () => {
     let long;
     let lat;
@@ -86,4 +86,4 @@
                     });
             });
     }
-}); */
+}); 

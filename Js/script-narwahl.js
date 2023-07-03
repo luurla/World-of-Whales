@@ -85,7 +85,7 @@ showImageButton3.addEventListener('click', () => {
 });
 
 
-/* 
+
   window.addEventListener('load', () => {
     let long;
     let lat;
@@ -144,4 +144,4 @@ showImageButton3.addEventListener('click', () => {
                     });
             });
     }
-}); */
+}); 

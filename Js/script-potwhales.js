@@ -49,7 +49,7 @@ function parallax(event) {
 
 
 
-/* 
+
   window.addEventListener('load', () => {
     let long;
     let lat;
@@ -108,4 +108,4 @@ function parallax(event) {
                     });
             });
     }
-}); */
+}); 

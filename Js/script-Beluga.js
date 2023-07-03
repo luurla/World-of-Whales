@@ -103,7 +103,7 @@ showImageButton5.addEventListener('click', () => {
   myImage5.style.display = `flex`;
 });
 
-/* 
+
   window.addEventListener('load', () => {
     let long;
     let lat;
@@ -162,4 +162,4 @@ showImageButton5.addEventListener('click', () => {
                     });
             });
     }
-}); */
+}); 
