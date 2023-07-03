@@ -72,7 +72,7 @@
                 </a>
             </li>
             <div class="backhome">
-                <a href="Index.html">
+                <a href="/Index.html">
                     <p>h o m e</p>
                 </a>
             </div>
@@ -103,60 +103,57 @@
     <!--   navegation  -->
 
     <div class="intro-about">
-        What is this All about?
+        <p> What is this All about?</p>
         <div class="displacerlinks">
             <p>Exploring the fascinating</p>
         </div>
 
         <div class="displacerrechts">
             <p>world of whales</p>
-        </div </div>
+        </div>
+    </div>
 
-        <div class="about-Text">
+    <div class="about-Text">
+        <p>
             Whale Facs started as a passion project during my time in the Ment2 module at university. As an aspiring
             coder, I wanted to create a platform where I could combine my love for whales with my newfound coding
-            skills. The result? A whimsical and entertaining website that celebrates these majestic creatures.
-
+            skills. The result? A whimsical and entertaining website that celebrates these majestic creatures. <br>
+            <br>
             While Whale Facs may not be your typical serious and structured resource on whales, it serves a unique
             purpose. It's a playground where I could experiment with different coding techniques, try out new design
-            ideas, and showcase my growth as a developer.
-
+            ideas, and showcase my growth as a developer.<br>
+            <br>
             One of the aspects that makes Whale Facs truly special is the use of artificial intelligence (AI) in
             generating the pictures. By leveraging AI algorithms, some of the images on the website take on a weird and
             funny appearance. This adds an extra layer of whimsy and unexpectedness to the experience. So don't be
-            surprised if you come across a grinning whale or a tail doing a dance!
-
+            surprised if you come across a grinning whale or a tail doing a dance!<br>
+            <br>
             Here at Whale Facs, we embrace the chaos and find joy in the unexpected. You'll find a mix of informative
             content, interactive features, and quirky animations that bring the world of whales to life. Dive into a sea
             of fascinating facts about various whale species, explore mesmerizing photos and videos, and embark on
-            whimsical adventures through our virtual ocean.
-
-            But remember, Whale Facs is more than just a whimsical website. It's a testament to the power of learning
-            and growth. As I honed my coding skills through this project, I discovered the limitless possibilities of
-            combining creativity, technology, and even artificial intelligence.
-
-            So join me on this playful journey through the world of whales. Let's celebrate these incredible creatures
-            while embracing the chaos and fun that Whale Facs has to offer. Together, we'll learn, explore, and inspire
-            a deep appreciation for the wonders of the ocean and its magnificent inhabitants.
-
+            whimsical adventures through our virtual ocean.<br>
+            <br>
             Welcome to Whale Facs - where coding meets chaos, and whales steal the show, with a touch of AI-induced
-            hilarity!
-        </div>
-        <script>
-            const hamburger = document.querySelector(".hamburger-lines");
-            const menu = document.querySelector(".menu-items");
+            hilarity!<br>
+        </p>
+        
+    </div>
+    <script src="/Js/about.js"></script>
+    <script>
+        const hamburger = document.querySelector(".hamburger-lines");
+        const menu = document.querySelector(".menu-items");
 
-            hamburger.addEventListener("click", () => {
-                hamburger.classList.toggle("active");
-                menu.classList.toggle("active");
-            })
+        hamburger.addEventListener("click", () => {
+            hamburger.classList.toggle("active");
+            menu.classList.toggle("active");
+        })
 
-            document.querySelectorAll(".nav-link").forEach(n => n.addEventListener("click", () => {
-                hamburger.classList.remove("active");
-                menu.classList.remove("active");
-            }))
+        document.querySelectorAll(".nav-link").forEach(n => n.addEventListener("click", () => {
+            hamburger.classList.remove("active");
+            menu.classList.remove("active");
+        }))
 
-        </script>
+    </script>
 </body>
 
 </html>
