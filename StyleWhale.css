@@ -231,10 +231,44 @@ body {
     background-size: cover;
 }
 
-.intro-about{
+.intro-about {
     width: 100vw;
-    height: 100vh;
+    height: 120vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }
+
+.intro-about>p {
+    height: 40vh;
+    font-size: 5rem;
+}
+
+.about-Text {
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+}
+
+.about-Text>p {
+    text-align: justify;
+    width: 65vw;
+    height: 150vh;
+
+    font-size: 1.5rem;
+    font-weight: 200;
+}
+
+.displacerlinks,
+.displacerrechts {
+    position: absolute;
+    transform: translateX(0vw);
+    font-size: 3rem;
+    font-weight: 100;
+    top: 80vh;
+}
+
 
 /*  ------------ NAV ----------------*/
 
@@ -1007,6 +1041,50 @@ svg,
     to {
         border-right-color: transparent;
     }
+}
+
+/* .img-Orcas{
+    width: 100vw;
+    position: absolute;
+    z-index: -1;
+} */
+
+.KillTitle>img {
+    position: absolute;
+    width: 35vw;
+}
+
+/* .imgOrc1,
+.imgOrc3 {
+    transform: scaleX(-1) ;
+} */
+
+.imgOrc3,
+.imgOrc2,
+.imgOrc4,
+.imgOrc1 {
+    transform: translateY(0vw);
+}
+
+.imgOrc3 {
+    top: 67vh;
+    transform: translateX(15vw);
+    transform: scaleX(-1) ;
+}
+
+.imgOrc2 {
+    right: -4vw;
+    top: 18vh;
+}
+
+.imgOrc1 {
+    top: 34vh;
+    transform: scaleX(-1) ;
+}
+
+.imgOrc4 {
+    right: 1vw;
+    top: 54vh;
 }
 
 /*  ------------ Orca --------------------------------------------*/
