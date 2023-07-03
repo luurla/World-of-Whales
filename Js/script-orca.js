@@ -43,38 +43,38 @@ TypeWriter.prototype.type = function () {
     console.log(fullTxt);
 
 
-//Check if deleting
-/*     if (this.isDeleting) {
-        // Remove character
-        this.txt = fullTxt.substring(0, this.txt.length - 1);
-    } else {
-        // Add character */
         this.txt = fullTxt.substring(0, this.txt.length + 1);
-/*     } */
+
 
     this.txtElement.innerHTML = `<span class="txt">${this.txt}</span>`; 
 
     let typeSpeed = 200;
 
-/*     if (this.isDeleting) {
-        typeSpeed /= 2;
-    }
-
-    if (!this.isDeleting && this.txt === fullTxt) {
-        // Make a pause at end
-        typeSpeed = this.wait;
-        this.isDeleting = true;
-
-    } else if (this.isDeleting && this.txt === '') {
-        this.isDeleting = false;
-        //Move to the next word
-        this.wordIndex++;
-        // Pause before start typing
-        typeSpeed = 500;
-    } */
-
     setTimeout(() => this.type(), typeSpeed);
 }
+
+
+const displacerlinks = document.querySelectorAll('img.displacerlinks');
+const displacerrechts = document.querySelectorAll('img.displacerrechts');
+
+window.onscroll = () => {
+    let pos = window.scrollY - 200;
+    console.log(pos);
+
+    if (pos < 150) {
+        displacerlinks[0].style.left = `${pos/6}px`;
+        displacerlinks[1].style.left = `${-pos*0.5}px`;
+
+    }
+
+    if (pos < 150) {
+        displacerrechts[0].style.right = `${pos/6}px`;
+        displacerrechts[1].style.right = `${-pos}px`;
+
+    }
+
+}
+
 
 
 /* 
